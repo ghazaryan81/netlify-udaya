@@ -4,7 +4,7 @@ bower_components/
 mat/
 materials-hard/
 old/
-img/
+# img/
 css/fonts/
 node_modules/
 trash/

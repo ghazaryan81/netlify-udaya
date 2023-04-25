@@ -5,7 +5,7 @@ mat/
 materials-hard/
 old/
 # img/
-css/fonts/
+# css/fonts/
 node_modules/
 trash/
 .gitexcludes
