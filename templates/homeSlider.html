@@ -1,0 +1,40 @@
+<!--======video-slider======-->
+<div class="video-slide-place">
+	<a href="#" class="home-slide-arrow wide-slide-prev">
+		<span class="home-arrow-size">
+			<svg class="home-arrow-size-svg" viewBox="0 0 576 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+				<path class="path1" d="M575.961 68.561l-64.654-68.561-511.307 511.937 511.307 512.063 64.654-68.561-442.746-443.502 442.746-443.376z"></path>
+			</svg>
+		</span>
+	</a>
+	<a href="#" class="home-slide-arrow wide-slide-next">
+		<span class="home-arrow-size home-arrow-next-cell">
+			<svg class="home-arrow-size-svg" viewBox="0 0 576 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+				<path class="path1" d="M0 955.439l64.654 68.561 511.307-511.937-511.307-512.063-64.654 68.561 442.746 443.376-442.746 443.502z"></path>
+			</svg>
+		</span>
+	</a>
+	<div class="video-slide">
+		<div class="video-slide-item item" data-ng-repeat="homeSliderParam in homeSliderParams">
+			<div class="video-header" style="background-image:url(img/{{homeSliderParam.homeSliderImage}})">
+				<div class="video-description-bar">
+					<h2 class="video-description-title">
+						<span class="video-description-title-txt">
+							{{homeSliderParam.homeSliderTitle}}
+						</span>
+					</h2>
+				</div>
+				<div class="video-header-top-line"></div>
+				<div class="video-header-bottom-line"></div>
+				<a class="round-place" href="#">
+					<svg id="icon-media23" class="play-icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+						<path class="path1" d="M169.634 7.105c8.178-4.733 17.331-7.105 26.497-7.105 9.142 0 18.292 2.372 26.505 7.105l631.726 459.006c16.37 9.457 26.508 26.967 26.508 45.898 0 18.928-10.111 36.435-26.508 45.881l-631.726 459.025c-16.395 9.446-36.605 9.446-52.989 0-16.397-9.479-26.519-26.994-26.519-45.912v-918.006c0-18.92 10.105-36.427 26.505-45.892z"></path>
+					</svg>
+				</a>
+				<span class="video-cover-shadow"></span>
+			</div>
+		</div>
+		<!--/video-slide-item-->
+	</div>
+</div>
+<!--======/video-slider======-->

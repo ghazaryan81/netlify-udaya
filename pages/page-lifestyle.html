@@ -1,0 +1,84 @@
+<!--===============================-->
+<!--==========LIFESTYLE-PAGE=========-->
+<!--===============================-->
+<div class="PAGES">
+	<div class="PAGES-PAD">
+		<div class="page-top-spacer"></div>
+		<h2 class="page-title">
+			<span class="page-title-txt">
+				LIFESTYLE
+			</span>
+		</h2>
+		<h3 class="sub-page-title">
+			<span class="sub-page-title-txt">
+				MEDITATION
+			</span>
+		</h2>
+		<div class="spacer-page-2"></div>
+		<!--~~~~~~~~~~~~~~~~~~~~~~~all-videos-listing-cell~~~~~~~~~~~~~~~~~~~~~~~~-->
+		<div class="all-videos-listing-cell" data-ng-controller="movieLifeStyleTypeCtrl">
+			<div class="all-videos-listing-fix">
+				<ul class="lessons-list">
+					<li class="lessons-item" data-ng-repeat="movieLifeList in movieLifeStyleType">
+						<div class="lessons-item-pad">
+							<article class="lesson-article">
+								<figure class="lesson-figure">
+									<span class="difficult-rang">
+										<span class="difficult-rang-width">
+											<span class="difficult-rang-txt-1">
+												<span class="difficult-rang-txt-1-pad">
+													DIFFICULTY
+												</span>
+											</span>
+											<span class="difficult-rang-txt-2">{{movieLifeList.movieDifficulty}}</span>
+										</span>
+									</span>
+									<a href="#" title="{lesson}" class="lessons-link">
+										<span class="lessons-gradient"></span>
+										<img ng-src="img/{{movieLifeList.movieImg}}" alt="{{movieLifeList.movieTitle}}" title="{{movieLifeList.movieTitle}}" width="360" height="202" class="lessons-img-cover-resize hta"/>
+									</a>
+									<figcaption class="lesson-figcaption">
+										<div class="lesson-figcaption-pad">
+											<h2 class="lessons-title">{{movieLifeList.movieTitle}}</h2>
+											<h3 class="lessons-details">
+												<span class="lessons-teacher">{{movieLifeList.movieTeacher}}</span>
+												<span class="lessons-duration">/ {{movieLifeList.movieDuration}}</span>
+											</h3>
+											<div class="lessons-btn-cell">
+												<div class="btn-two-col">
+													<div class="btn-two-col-left">
+														<div class="btn-two-col-left-pad">
+															<a href="#" class="lessons-btn">
+																<span class="lessons-btn-txt" data-hover-txt="SUBSCRIBE NOW">
+																	SUBSCRIBE NOW
+																</span>
+															</a>
+														</div>
+													</div>
+													<div class="btn-two-col-right">
+														<div class="btn-two-col-right-pad">
+															<a href="#" class="lessons-btn">
+																<span class="lessons-btn-txt" data-hover-txt="RENT {{movieLifeList.movieRentDays}} DAYS ${{movieLifeList.movieRentTotalPrice}}">
+																	RENT {{movieLifeList.movieRentDays}} DAYS ${{movieLifeList.movieRentTotalPrice}}
+																</span>
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</figcaption>
+								</figure>
+							</article>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--~~~~~~~~~~~~~~~~~~~~~~~/all-videos-listing-cell~~~~~~~~~~~~~~~~~~~~~~~~-->
+		<div class="preload-place"></div>
+	</div>
+</div>
+<!--===============================-->
+<!--==========/LIFESTYLE-PAGE=========-->
+<!--===============================-->

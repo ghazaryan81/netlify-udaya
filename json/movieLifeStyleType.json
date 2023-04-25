@@ -1,0 +1,222 @@
+[
+	  {
+		"movieID":"1",
+		"movieImg":"lessons-cover.jpg",
+		"movieDifficulty":"2",
+		"movieTitle":"SERIOUS CORE WORK",
+		"movieTeacher":"MARISA WEPPNER",
+		"movieDuration":"60 MIN",
+		"movieLink":"#",
+		"movieRentDays":"7",
+		"movieRentTotalPrice":"3.99"
+	  },
+	  {
+		"movieID":"2",
+		"movieImg":"lessons-cover-22.jpg",
+		"movieDifficulty":"3",
+		"movieTitle":"SERIOUS CORE WORK",
+		"movieTeacher":"MARISA WEPPNER",
+		"movieDuration":"60 MIN",
+		"movieLink":"#",
+		"movieRentDays":"7",
+		"movieRentTotalPrice":"3.99"
+	  },
+	{
+		"movieID":"3",
+		"movieImg":"lessons-cover-3.jpg",
+		"movieDifficulty":"3",
+		"movieTitle":"SERIOUS CORE WORK",
+		"movieTeacher":"MARISA WEPPNER",
+		"movieDuration":"60 MIN",
+		"movieLink":"#",
+		"movieRentDays":"7",
+		"movieRentTotalPrice":"3.99"
+	},
+	{
+		"movieID":"4",
+		"movieImg":"lessons-cover-4.jpg",
+		"movieDifficulty":"3",
+		"movieTitle":"SERIOUS CORE WORK",
+		"movieTeacher":"MARISA WEPPNER",
+		"movieDuration":"60 MIN",
+		"movieLink":"#",
+		"movieRentDays":"7",
+		"movieRentTotalPrice":"3.99"
+	},
+	{
+		"movieID":"5",
+		"movieImg":"lessons-cover-5.jpg",
+		"movieDifficulty":"3",
+		"movieTitle":"SERIOUS CORE WORK",
+		"movieTeacher":"MARISA WEPPNER",
+		"movieDuration":"60 MIN",
+		"movieLink":"#",
+		"movieRentDays":"7",
+		"movieRentTotalPrice":"3.99"
+	},
+	{
+		"movieID":"6",
+		"movieImg":"lessons-cover-6.jpg",
+		"movieDifficulty":"2",
+		"movieTitle":"SERIOUS CORE WORK",
+		"movieTeacher":"MARISA WEPPNER",
+		"movieDuration":"60 MIN",
+		"movieLink":"#",
+		"movieRentDays":"7",
+		"movieRentTotalPrice":"3.99"
+	},
+	{
+		"movieID":"7",
+		"movieImg":"lessons-cover-7.jpg",
+		"movieDifficulty":"3",
+		"movieTitle":"SERIOUS CORE WORK",
+		"movieTeacher":"MARISA WEPPNER",
+		"movieDuration":"60 MIN",
+		"movieLink":"#",
+		"movieRentDays":"7",
+		"movieRentTotalPrice":"3.99"
+	},
+	{
+		"movieID":"8",
+		"movieImg":"lessons-cover-8.jpg",
+		"movieDifficulty":"3",
+		"movieTitle":"SERIOUS CORE WORK",
+		"movieTeacher":"MARISA WEPPNER",
+		"movieDuration":"60 MIN",
+		"movieLink":"#",
+		"movieRentDays":"7",
+		"movieRentTotalPrice":"3.99"
+	},
+	{
+		"movieID":"9",
+		"movieImg":"lessons-cover-9.jpg",
+		"movieDifficulty":"3",
+		"movieTitle":"SERIOUS CORE WORK",
+		"movieTeacher":"MARISA WEPPNER",
+		"movieDuration":"60 MIN",
+		"movieLink":"#",
+		"movieRentDays":"7",
+		"movieRentTotalPrice":"3.99"
+	},
+	{
+		"movieID":"10",
+		"movieImg":"lessons-cover-10.jpg",
+		"movieDifficulty":"3",
+		"movieTitle":"SERIOUS CORE WORK",
+		"movieTeacher":"MARISA WEPPNER",
+		"movieDuration":"60 MIN",
+		"movieLink":"#",
+		"movieRentDays":"7",
+		"movieRentTotalPrice":"3.99"
+	},
+	{
+		"movieID":"11",
+		"movieImg":"lessons-cover-11.jpg",
+		"movieDifficulty":"3",
+		"movieTitle":"SERIOUS CORE WORK",
+		"movieTeacher":"MARISA WEPPNER",
+		"movieDuration":"60 MIN",
+		"movieLink":"#",
+		"movieRentDays":"7",
+		"movieRentTotalPrice":"3.99"
+	},
+	{
+		"movieID":"12",
+		"movieImg":"lessons-cover-12.jpg",
+		"movieDifficulty":"3",
+		"movieTitle":"SERIOUS CORE WORK",
+		"movieTeacher":"MARISA WEPPNER",
+		"movieDuration":"60 MIN",
+		"movieLink":"#",
+		"movieRentDays":"7",
+		"movieRentTotalPrice":"3.99"
+	},
+	{
+		"movieID":"13",
+		"movieImg":"lessons-cover-13.jpg",
+		"movieDifficulty":"3",
+		"movieTitle":"SERIOUS CORE WORK",
+		"movieTeacher":"MARISA WEPPNER",
+		"movieDuration":"60 MIN",
+		"movieLink":"#",
+		"movieRentDays":"7",
+		"movieRentTotalPrice":"3.99"
+	},
+	{
+		"movieID":"14",
+		"movieImg":"lessons-cover-14.jpg",
+		"movieDifficulty":"2",
+		"movieTitle":"SERIOUS CORE WORK",
+		"movieTeacher":"MARISA WEPPNER",
+		"movieDuration":"60 MIN",
+		"movieLink":"#",
+		"movieRentDays":"7",
+		"movieRentTotalPrice":"3.99"
+	},
+	{
+		"movieID":"15",
+		"movieImg":"lessons-cover-15.jpg",
+		"movieDifficulty":"3",
+		"movieTitle":"SERIOUS CORE WORK",
+		"movieTeacher":"MARISA WEPPNER",
+		"movieDuration":"60 MIN",
+		"movieLink":"#",
+		"movieRentDays":"7",
+		"movieRentTotalPrice":"3.99"
+	},
+	{
+		"movieID":"16",
+		"movieImg":"lessons-cover-16.jpg",
+		"movieDifficulty":"3",
+		"movieTitle":"SERIOUS CORE WORK",
+		"movieTeacher":"MARISA WEPPNER",
+		"movieDuration":"60 MIN",
+		"movieLink":"#",
+		"movieRentDays":"7",
+		"movieRentTotalPrice":"3.99"
+	},
+	{
+		"movieID":"17",
+		"movieImg":"lessons-cover-17.jpg",
+		"movieDifficulty":"3",
+		"movieTitle":"SERIOUS CORE WORK",
+		"movieTeacher":"MARISA WEPPNER",
+		"movieDuration":"60 MIN",
+		"movieLink":"#",
+		"movieRentDays":"7",
+		"movieRentTotalPrice":"3.99"
+	},
+	{
+		"movieID":"18",
+		"movieImg":"lessons-cover-18.jpg",
+		"movieDifficulty":"3",
+		"movieTitle":"SERIOUS CORE WORK",
+		"movieTeacher":"MARISA WEPPNER",
+		"movieDuration":"60 MIN",
+		"movieLink":"#",
+		"movieRentDays":"7",
+		"movieRentTotalPrice":"3.99"
+	},
+	{
+		"movieID":"19",
+		"movieImg":"lessons-cover-19.jpg",
+		"movieDifficulty":"3",
+		"movieTitle":"SERIOUS CORE WORK",
+		"movieTeacher":"MARISA WEPPNER",
+		"movieDuration":"60 MIN",
+		"movieLink":"#",
+		"movieRentDays":"7",
+		"movieRentTotalPrice":"3.99"
+	},
+	{
+		"movieID":"20",
+		"movieImg":"lessons-cover-20.jpg",
+		"movieDifficulty":"3",
+		"movieTitle":"SERIOUS CORE WORK",
+		"movieTeacher":"MARISA WEPPNER",
+		"movieDuration":"60 MIN",
+		"movieLink":"#",
+		"movieRentDays":"7",
+		"movieRentTotalPrice":"3.99"
+	}
+]

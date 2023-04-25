@@ -1,0 +1,148 @@
+				<!--ALL-VIDEO-LISTING-->
+				<div class="ALL-VIDEO-PAGES">
+					<div class="ALL-VIDEO-PAGES-PAD">
+						<!--++++++all-videos-header++++++-->
+						<div class="all-videos-header">
+							<div class="all-videos-header-top-spacer"></div>
+							<h2 class="all-videos-title">
+								<span class="all-videos-title-txt">
+									ALL VIDEOS
+								</span>
+							</h2>
+							<h3 class="all-video-sub-title">
+								<span class="all-video-sub-title-txt">
+									SELECT A CLASS THAT FITS YOUR LEVEL
+								</span>
+							</h3>
+							<!--======drop-down-filters======-->
+							<div class="drop-down-filters">
+								<ul class="drop-down-filters-list">
+									<li class="drop-down-filters-item">
+										<div class="drop-down-filters-item-pad">
+											<a href="#" class="dd-link">
+												<span class="dd-link-title">TEACHER:</span> SHOW ALL
+												<span class="dd-link-arrow-cell">
+													<svg id="icon-arrow-down" class="arrow-down-icon" viewBox="0 0 1766 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+														<path class="path1" d="M118.117 0l-118.117 114.783 883.021 909.217 883.021-909.217-118.117-114.783-764.904 787.289z"></path>
+													</svg>
+												</span>
+											</a>
+										</div>
+										<!--filterDropDownTeacher-->
+										<filter-drop-down-teacher></filter-drop-down-teacher>
+										<!--/filterDropDownTeacher-->
+									</li>
+									<li class="drop-down-filters-item">
+										<div class="drop-down-filters-item-pad">
+											<a href="#" class="dd-link">
+												<span class="dd-link-title">LENGTH:</span> SHOW ALL
+												<span class="dd-link-arrow-cell">
+													<svg id="icon-arrow-down" class="arrow-down-icon" viewBox="0 0 1766 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+														<path class="path1" d="M118.117 0l-118.117 114.783 883.021 909.217 883.021-909.217-118.117-114.783-764.904 787.289z"></path>
+													</svg>
+												</span>
+											</a>
+										</div>
+										<!--filterDropDownLenght-->
+										<filter-drop-down-length></filter-drop-down-length>
+										<!--/filterDropDownLenght-->
+									</li>
+									<li class="drop-down-filters-item">
+										<div class="drop-down-filters-item-pad">
+											<a href="#" class="dd-link">
+												<span class="dd-link-title">DIFFICULTY:</span> SHOW ALL
+												<span class="dd-link-arrow-cell">
+													<svg id="icon-arrow-down" class="arrow-down-icon" viewBox="0 0 1766 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+														<path class="path1" d="M118.117 0l-118.117 114.783 883.021 909.217 883.021-909.217-118.117-114.783-764.904 787.289z"></path>
+													</svg>
+												</span>
+											</a>
+										</div>
+										<!--filterDropDownDifficulty-->
+										<filter-drop-down-difficulty></filter-drop-down-difficulty>
+										<!--/filterDropDownDifficulty-->
+									</li>
+								</ul>
+							</div>
+							<!--======/drop-down-filters======-->
+						</div>
+						<!--++++++/all-videos-header++++++-->
+
+						<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+						<!--~~~~~~~~~~~~~~~~~~~~~~~all-videos-listing-cell~~~~~~~~~~~~~~~~~~~~~~~~-->
+						<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+						<div class="all-videos-listing-cell">
+							<div class="all-videos-listing-fix" data-ng-controller="movieJsonCtrl">
+								<ul class="lessons-list">
+									<li class="lessons-item" data-ng-repeat="movieParam in movieParams">
+										<div class="lessons-item-pad">
+											<article class="lesson-article">
+												<figure class="lesson-figure">
+													<span class="difficult-rang">
+														<span class="difficult-rang-width">
+															<span class="difficult-rang-txt-1">
+																<span class="difficult-rang-txt-1-pad">
+																	DIFFICULTY
+																</span>
+															</span>
+															<span class="difficult-rang-txt-2">
+																{{movieParam.movieDifficulty}}
+															</span>
+														</span>
+													</span>
+													<a href="#" title="{{movieParam.movieTitle}}" class="lessons-link hta">
+														<span class="lessons-gradient"></span>
+														<img src="img/ng-src.png" ng-src="img/{{movieParam.movieImg}}" alt="{{movieParam.movieTitle}}" title="{{movieParam.movieTitle}}" width="360" height="202" class="lessons-img-cover-resize hta"/>
+													</a>
+													<figcaption class="lesson-figcaption">
+														<div class="lesson-figcaption-pad">
+															<h2 class="lessons-title">
+																{{movieParam.movieTitle}}
+															</h2>
+															<h3 class="lessons-details">
+																<span class="lessons-teacher">
+																	{{movieParam.movieTeacher}}
+																</span>
+																<span class="lessons-duration">
+																	/ {{movieParam.movieDuration}}
+																</span>
+															</h3>
+															<div class="lessons-btn-cell">
+																<div class="btn-two-col">
+																	<div class="btn-two-col-left">
+																		<div class="btn-two-col-left-pad">
+																			<a href="#" class="lessons-btn">
+																				<span class="lessons-btn-txt" data-hover-txt="SUBSCRIBE NOW">
+																					SUBSCRIBE NOW
+																				</span>
+																			</a>
+																		</div>
+																	</div>
+																	<div class="btn-two-col-right">
+																		<div class="btn-two-col-right-pad">
+																			<a href="#" class="lessons-btn">
+																				<span class="lessons-btn-txt" data-hover-txt="RENT 7 DAYS $3.99">
+																					RENT {{movieParam.movieRentDays}} 
+																					DAYS ${{movieParam.movieRentTotalPrice}}
+																				</span>
+																			</a>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</figcaption>
+												</figure>
+											</article>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+						<!--~~~~~~~~~~~~~~~~~~~~~~~/all-videos-listing-cell~~~~~~~~~~~~~~~~~~~~~~~~-->
+						<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+						<div class="preload-place"></div>
+					</div>
+				</div>
+				<!--/ALL-VIDEO-LISTING-->

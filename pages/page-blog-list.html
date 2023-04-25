@@ -1,0 +1,57 @@
+<!--====================-->
+<!--======BLOG-PAGE======-->
+<!--====================-->
+<div class="BLOG-PAGE">
+	<div class="BLOG-PAGE-OUT-PAD">
+		<div class="BLOG-PAGE-FIX" data-ng-controller="blogListJsonCtrl">
+
+			<h2 class="cat-title">
+				<span class="cat-title-txt">
+					BLOG
+				</span>
+			</h2>
+
+			<!--blog-repeat-selector-->
+			<div class="blog-repeat-selector" data-ng-repeat="blogList in blogListJson">
+				<article class="blog-post">
+					<div class="blog-post-pad">
+						<figure class="blog-post-figure">
+							<a href="blog/{{blogList.blogID}}/{{((blogList.blogTitle).toLowerCase()).split(' ').join('-')}}/" class="blog-post-figure-image-link hta" title="{{blogList.blogTitle}}">
+								<span class="blog-post-gradient">.</span>
+								<img src="img/ng-src.png" ng-src="img/blog/{{blogList.blogImg}}" 
+											alt="{{blogList.blogTitle}}" 
+											title="{{blogList.blogTitle}}" 
+											width="740" 
+											height="347" 
+											class="resize-blog-post-img hta blog-imgae"/>
+							</a>
+							<figcaption class="blog-post-figcaption">
+								<div class="blog-post-figcaption-pad">
+									<h2 class="blog-post-title">
+										<a href="#" class="blog-post-title-link hta" title="{{blogList.blogTitle}}">
+											{{(blogList.blogTitle)}}
+										</a>
+									</h2>
+									<span class="blog-post-date hta" title="{{blogList.blogDate}}">
+										{{blogList.blogDate}}
+									</span>
+								</div>
+							</figcaption>
+						</figure>
+						<div class="blog-post-description">
+							<div class="blog-post-description-pad">
+								{{blogList.blogShortDescr}}
+							</div>
+						</div>
+					</div>
+				</article>
+				<div class="blog-poost-spacer"></div>
+			</div>
+			<!--/blog-repeat-selector-->
+		</div>
+	</div>
+	<blog-list></blog-list>
+</div>
+<!--====================-->
+<!--======/BLOG-PAGE======-->
+<!--====================-->

@@ -1,0 +1,15 @@
+.git/
+.sass-cache/
+bower_components/
+mat/
+materials-hard/
+old/
+img/
+css/fonts/
+node_modules/
+trash/
+.gitexcludes
+*.7z
+*.rar
+*.zip
+bower.json

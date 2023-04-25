@@ -1,0 +1,44 @@
+@media only screen and (max-width:1690px){
+	.lessons-slide-prev{left:-40px}
+	.lessons-slide-next{right:-40px}
+}
+
+@media only screen and (max-width:1400px){
+	.lessons-btn-txt{font-size:11px}
+}
+
+@media only screen and (max-width:1201px){
+	.quad-col-item{width:50%}
+}
+
+@media only screen and (max-width:1370px){
+	.lessons-item{width:33.333%}
+}
+
+@media only screen and (max-width:1250px){
+	.main-menu-item{padding:42px 5.6px 42px 8px}
+	.main-nav{padding-left:10px}
+	.logo{top:-11px;-moz-transform:scale(0.5);-o-transform:scale(0.5);-webkit-transform:scale(0.5);transform:scale(0.5);-ms-transform:scale(0.5);-khtml-transform:scale(0.5);-icab-transform:scale(0.5)}
+	.index-header-right-pad{padding:30px 44px 0 0}
+}
+
+
+@media only screen and (max-width:1013px){
+	.slide-item-description{font-size:18px;line-height:27.5px}
+}
+
+@media only screen and (max-width:943px){
+	.drop-down-filter-box{width:245px}
+	.drop-down-filter-box-position{left:-15%!important}
+}
+
+@media only screen and (max-width:970px){
+	.lessons-item{width:50%}
+}
+
+@media only screen and (max-width:780px){
+	.player-bar{width:100%;margin-left:0;margin-top:20px;width:100%}
+	.player-position{left:0;top:0;width:100%}
+}
+
+

@@ -1,0 +1,123 @@
+<!--====================-->
+<!--======BLOG-PAGE======-->
+<!--====================-->
+<div class="BLOG-PAGE" data-ng-controller="blogListJsonCtrl">
+	<div class="BLOG-PAGE-OUT-PAD">
+		<div class="BLOG-PAGE-FIX">
+			<h2 class="cat-title">
+				<span class="cat-title-txt">
+					BLOG
+				</span>
+			</h2>
+			<!--blog-repeat-selector-->
+			<div class="blog-repeat-selector" data-ng-repeat="blogList in blogListJson" ng-show="blogList.blogID==blogId">
+				<article class="blog-post">
+
+					<!--article-header-->
+					<div class="article-header">
+						<div class="article-header-pad">
+							<h1 class="blog-inner-title">
+								<span class="blog-inner-title-txt">
+									THE SEVENTH LIMB
+								</span>
+							</h1>
+							<span class="date-place">
+								January 26. 2015
+							</span>
+						</div>
+					</div>
+					<!--/article-header-->
+
+					<div class="blog-post-pad">
+
+						<!--blog-post-inner-img-place-->
+						<div class="blog-post-inner-img-place">
+							<div class="title-place-inner">
+								<div class="title-place-inner-pad">
+									<h2 class="blog-post-title">
+										<span class="blog-post-title-link hta" title="{{blogList.blogTitle}}">
+											{{blogList.blogTitle}}
+										</span>
+									</h2>
+									<div class="blog-post-date hta" title="{{blogList.blogDate}}">
+										{{blogList.blogDate}}
+									</div>
+								</div>
+							</div>
+							<img src="img/ng-src.png" ng-src="img/blog/{{blogList.blogImg}}" 
+										alt="{{blogList.blogTitle}}" 
+										title="{{blogList.blogTitle}}" 
+										width="740" 
+										height="347" 
+										class="resize-blog-post-img hta blog-imgae"/>
+						</div>
+						<!--blog-post-inner-img-place-->
+
+						<div class="blog-post-description">
+							<div class="blog-post-description-pad">
+								<div ng-bind-html="blogList.blogDescr"></div>
+								<!--social-icons-->
+								<div class="social-icons">
+									<img src="img/social-icons.png" alt="" title="" width="333" height="20" />
+								</div>
+								<!--/social-icons-->
+							</div>
+						</div>
+
+					</div>
+				</article>
+				<div class="blog-poost-spacer"></div>
+			</div>
+			<!--/blog-repeat-selector-->
+			<!--similar-title-->
+			<div class="similar-title">
+				<div class="similar-title-pad">
+					<h4 class="similar-title-txt">
+						SIMILAR NEWS
+					</h4>
+				</div>
+			</div>
+			<!--similar-title-->
+			<!--blog-repeat-selector-->
+			<div class="blog-repeat-selector" data-ng-repeat="blogList in blogListJson | limitTo:2">
+				<article class="blog-post">
+					<div class="blog-post-pad">
+						<figure class="blog-post-figure">
+							<a href="blog/{{blogList.blogID}}/{{((blogList.blogTitle).toLowerCase()).split(' ').join('-')}}/" class="blog-post-figure-image-link hta" title="{{blogList.blogTitle}}">
+								<span class="blog-post-gradient">.</span>
+								<img src="img/ng-src.png" ng-src="img/blog/{{blogList.blogImg}}" 
+											alt="{{blogList.blogTitle}}" 
+											title="{{blogList.blogTitle}}" 
+											width="740" 
+											height="347" 
+											class="resize-blog-post-img hta blog-imgae"/>
+							</a>
+							<figcaption class="blog-post-figcaption">
+								<div class="blog-post-figcaption-pad">
+									<h2 class="blog-post-title">
+										<a href="#" class="blog-post-title-link hta" title="{{blogList.blogTitle}}">
+											{{blogList.blogTitle}}
+										</a>
+									</h2>
+									<span class="blog-post-date hta" title="{{blogList.blogDate}}">
+										{{blogList.blogDate}}
+									</span>
+								</div>
+							</figcaption>
+						</figure>
+						<div class="blog-post-description">
+							<div class="blog-post-description-pad">
+								{{blogList.blogShortDescr}}
+							</div>
+						</div>
+					</div>
+				</article>
+				<div class="blog-poost-spacer"></div>
+			</div>
+			<!--/blog-repeat-selector-->
+		</div>
+	</div>
+</div>
+<!--====================-->
+<!--======/BLOG-PAGE======-->
+<!--====================-->

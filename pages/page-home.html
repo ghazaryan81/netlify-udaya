@@ -1,0 +1,288 @@
+<!--============================-->
+<!--==========HOME-PAGE=========-->
+<!--============================-->
+
+<!--======video-slider======-->
+<div class="video-slide-place" data-ng-controller="homeHeaderSliderCtrl">
+	<a href="#" class="home-slide-arrow wide-slide-prev">
+		<span class="home-arrow-size">
+			<svg class="home-arrow-size-svg" viewBox="0 0 576 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+				<path class="path1" d="M575.961 68.561l-64.654-68.561-511.307 511.937 511.307 512.063 64.654-68.561-442.746-443.502 442.746-443.376z"></path>
+			</svg>
+		</span>
+	</a>
+	<a href="#" class="home-slide-arrow wide-slide-next">
+		<span class="home-arrow-size home-arrow-next-cell">
+			<svg class="home-arrow-size-svg" viewBox="0 0 576 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+				<path class="path1" d="M0 955.439l64.654 68.561 511.307-511.937-511.307-512.063-64.654 68.561 442.746 443.376-442.746 443.502z"></path>
+			</svg>
+		</span>
+	</a>
+	<!--empty-selector-->
+	<div class="empty-selector">
+		<!--homeHeaderSliderDir-->
+		<home-header-slider-dir></home-header-slider-dir>
+		<!--/homeHeaderSliderDir-->
+		<div class="video-slide">
+			<!--video-slide-item-->
+			<div class="video-slide-item item" data-ng-repeat="homeHead in homeHeader">
+				<div class="video-header" style="background-image:url(img/{{homeHead.img}})">
+					<!--video-description-bar-->
+					<div class="video-description-bar">
+						<h2 class="video-description-title">
+							<span class="video-description-title-txt">
+								{{homeHead.title}}
+							</span>
+						</h2>
+					</div>
+					<!--/video-description-bar-->
+					<div class="video-header-top-line"></div>
+					<div class="video-header-bottom-line"></div>
+					<a class="round-place" href="#" title="{{homeHead.title}}">
+						<svg id="icon-media23" class="play-icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<path class="path1" d="M169.634 7.105c8.178-4.733 17.331-7.105 26.497-7.105 9.142 0 18.292 2.372 26.505 7.105l631.726 459.006c16.37 9.457 26.508 26.967 26.508 45.898 0 18.928-10.111 36.435-26.508 45.881l-631.726 459.025c-16.395 9.446-36.605 9.446-52.989 0-16.397-9.479-26.519-26.994-26.519-45.912v-918.006c0-18.92 10.105-36.427 26.505-45.892z"></path>
+						</svg>
+					</a>
+					<span class="video-cover-shadow"></span>
+				</div>
+			</div>
+			<!--/video-slide-item-->
+		</div>
+	</div>
+	<!--/empty-selector-->
+</div>
+<!--======/video-slider======-->
+<!--======lessons-bar======-->
+<section class="lessons-bar">
+	<div class="lessons-bar-out-pad">
+		<!--=================lesson-slide-cell=================-->
+		<div class="lesson-slide-cell">
+			<div class="lesson-slide-bar">
+				<div class="lessons-bar-fix">
+					<a href="#" class="home-slide-arrow lessons-slide-prev">
+						<span class="home-arrow-size home-arrow-prev-cell">
+							<svg class="home-arrow-size-svg" viewBox="0 0 576 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+								<path class="path1" d="M575.961 68.561l-64.654-68.561-511.307 511.937 511.307 512.063 64.654-68.561-442.746-443.502 442.746-443.376z"></path>
+							</svg>
+						</span>
+					</a>
+					<a href="#" class="home-slide-arrow lessons-slide-next">
+						<span class="home-arrow-size home-arrow-next-cell">
+							<svg class="home-arrow-size-svg" viewBox="0 0 576 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+								<path class="path1" d="M0 955.439l64.654 68.561 511.307-511.937-511.307-512.063-64.654 68.561 442.746 443.376-442.746 443.502z"></path>
+							</svg>
+						</span>
+					</a>
+					<div class="lessons-bar-fix-max-w" >
+						<!--lessons-carousel-->
+						<!--======empty-selector======-->
+						<div class="empty-selector">
+							<!--lessonsListDir-->
+							<lessons-list-dir></lessons-list-dir>
+							<!--/lessonsListDir-->
+							<div class="lessons-carousel" data-ng-controller="lessonsListJson">
+								<!--item-->
+								<div class="lessons-carousel-item item" data-ng-repeat="lengthArrayItem in lengthArray">
+									<ul class="lessons-list">
+										<li class="lessons-item" data-ng-repeat="lessonsList in row[lengthArrayItem]">
+											<div class="lessons-item-pad">
+												<article class="lesson-article">
+													<figure class="lesson-figure">
+														<span class="difficult-rang">
+															<span class="difficult-rang-width">
+																<span class="difficult-rang-txt-1">
+																	<span class="difficult-rang-txt-1-pad">
+																		DIFFICULTY
+																	</span>
+																</span>
+																<span class="difficult-rang-txt-2">{{iterations}}</span>
+															</span>
+														</span>
+														<a href="#" title="{lesson}" class="lessons-link">
+															<span class="lessons-gradient"></span>
+															<img src="img/ng-src.png" ng-src="img/{{lessonsList.movieImg}}" alt="{lesson}" title="{lesson}" width="360" height="202" class="lessons-img-cover-resize hta"/>
+														</a>
+														<figcaption class="lesson-figcaption"> 
+															<div class="lesson-figcaption-pad">
+																<h2 class="lessons-title">SERIOUS CORE WORK</h2>
+																<h3 class="lessons-details">
+																	<span class="lessons-teacher">MARISA WEPPNER</span>
+																	<span class="lessons-duration">/ 60 MIN</span>
+																</h3>
+																<div class="lessons-btn-cell">
+																	<div class="btn-two-col">
+																		<div class="btn-two-col-left">
+																			<div class="btn-two-col-left-pad">
+																				<a href="#" class="lessons-btn">
+																					<span class="lessons-btn-txt" data-hover-txt="SUBSCRIBE NOW">
+																						SUBSCRIBE NOW
+																					</span>
+																				</a>
+																			</div>
+																		</div>
+																		<div class="btn-two-col-right">
+																			<div class="btn-two-col-right-pad">
+																				<a href="#" class="lessons-btn">
+																					<span class="lessons-btn-txt" data-hover-txt="RENT 7 DAYS $3.99">
+																						RENT 7 DAYS $3.99
+																					</span>
+																				</a>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</figcaption>
+													</figure>
+												</article>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<!--item-->
+							</div>
+							<!--/lessons-carousel-->
+						</div>
+						<!--======/empty-selector======-->
+					</div>
+				</div>
+				<!--/lessons-bar-fix-->
+			</div>
+		</div>
+		<!--=================/lesson-slide-cell=================-->
+	</div>
+	<!--title-x-cell-->
+	<div class="title-x-cell">
+		<h2 class="title-x-h2">
+			SELECT A CLASS THAT<br />FITS YOUR LEVE
+		</h2>
+	</div>
+	<!--/title-x-cell-->
+
+	<!--buttons-cell-x-->
+	<div class="buttons-cell-x">
+		<a href="#" class="custom-button">
+			<span class="custom-button-txt" data-href-txt="BROWSE ALL">
+				BROWSE ALL
+			</span>
+		</a>
+	</div>
+	<!--/buttons-cell-x-->
+</section>
+<!--======/lessons-bar======-->
+<!--======================-->
+<!--======product-place======-->
+<!--======================-->
+<section class="product-place" data-ng-controller="storeJsonCtrl">
+	<div class="product-place-fix">
+		<div class="product-place-pad">
+
+			<!--====product-menu-nav====-->
+			<nav class="product-menu-nav">
+				<ul class="product-menu-list">
+					<li class="product-menu-item" data-ng-repeat="storeList in storeJsonList">
+						<a href="#" class="product-menu-item-link">
+							<span class="product-menu-item-link-txt">{{storeList.storeProductTitle}}</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<!--====/product-menu-nav====-->
+
+
+			<!--======product-carousel======-->
+			<div class="product-carousel-arrow-cell">
+				<a class="home-slide-arrow lessons-slide-prev product-slide-prev" href="#">
+					<span class="home-arrow-size home-arrow-prev-cell">
+						<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 576 1024" class="home-arrow-size-svg">
+							<path d="M575.961 68.561l-64.654-68.561-511.307 511.937 511.307 512.063 64.654-68.561-442.746-443.502 442.746-443.376z" class="path1"/>
+						</svg>
+					</span>
+				</a>
+				<a href="#" class="home-slide-arrow home-slide-next product-slide-next">
+					<span class="home-arrow-size home-arrow-next-cell">
+						<svg class="home-arrow-size-svg" viewBox="0 0 576 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+							<path class="path1" d="M0 955.439l64.654 68.561 511.307-511.937-511.307-512.063-64.654 68.561 442.746 443.376-442.746 443.502z"></path>
+						</svg>
+					</span>
+				</a>
+				<!--empty-selector-->
+				<div class="empty-selector">
+					<store-dir></store-dir>
+					<!--======product-carousel======-->
+					<div class="product-carousel">
+						<!--product-carousel-item item-->
+						<div class="product-carousel-item item" data-ng-repeat="storeList in storeJsonList">
+							<h2 class="product-title"><span class="product-title-txt">{{storeList.storeProductTitle}}</span></h2>
+							<div class="product-top-spacer"></div>
+							<div class="product-image-cell">
+								<figure class="product-figure">
+									<img src="" ng-src="img/{{storeList.storeProductImg}}" width="399" height="421" alt="{{storeList.storeProductTitle}}" title="{{storeList.storeProductTitle}}" class="hta resize-product-image"/>
+								</figure>
+							</div>
+							<div class="product-descr-list-cell">
+								<ul class="product-descr-list">
+									<li class="product-descr-list-item">
+										<div class="product-descr-list-item-pad">
+											<div class="position-left-descr">
+												<img src="img/download_online_and_watch_whenever.png" alt="" title="" width="84" height="52" class="hta" />
+												<div class="spacer-s-1"></div>
+												<h2 class="product-description-titles tar">
+													<span class="product-description-titles-txt">DOWNLOAD ONLINE &<br />WATCH WHENEVER</span>
+												</h2>
+												<div class="break-animate-button">
+													<a href="#" class="animate-button">
+														<span class="animate-button-txt" data-href-txt="BUY $100">BUY ${{storeList.storeProductPrice}}</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="product-descr-list-item">
+										<div class="product-descr-list-item-pad">
+											<div class="middle-spacer"></div>
+											<h2 class="product-description-titles">
+												<span class="product-description-titles-txt">DOWNLOAD ONLINE<br />& GET {{storeList.storeProductShortDescr}}</span>
+											</h2>
+											<div class="break-animate-button">
+												<a href="#" class="animate-button">
+													<span class="animate-button-txt" data-href-txt="BUY & ORDER $ 180">BUY & ORDER ${{storeList.storeProductPrice}}</span>
+												</a>
+											</div>
+										</div>
+									</li>
+									<li class="product-descr-list-item">
+										<div class="product-descr-list-item-pad">
+											<div class="position-right-descr tal">
+												<img src="img/order_12_dvds_&_watch_anywhere.png" alt="" title="" width="66" height="49" class="hta"/>
+												<div class="spacer-s-1"></div>
+												<h2 class="product-description-titles tal">
+													<span class="product-description-titles-txt">ORDER {{storeList.storeProductShortDescr}} &<br />WATCH ANYWHERE</span>
+												</h2>
+												<div class="break-animate-button">
+													<a href="#" class="animate-button">
+														<span class="animate-button-txt" data-href-txt="ORDER $120">ORDER ${{storeList.storeProductPrice}}</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<!--/product-descr-list-cell-->
+						</div>
+						<!--/product-carousel-item item-->
+					</div>
+					<!--======/product-carousel======-->
+				</div>
+				<!--/empty-selector-->
+		</div>
+	</div>
+</section>
+<!--======================-->
+<!--======/product-place======-->
+<!--======================-->
+
+<!--============================-->
+<!--==========/HOME-PAGE=========-->
+<!--============================-->

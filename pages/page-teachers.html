@@ -1,0 +1,123 @@
+<!--PAGES-->
+<div class="PAGES">
+	<div class="PAGES-PAD" data-ng-controller="allTeacher">
+		<div class="page-top-spacer"></div>
+		<h2 class="page-title">
+			<span class="page-title-txt">TEACHERS</span>
+		</h2>
+		<div class="spacer-page-2"></div>
+
+		<!--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^-->
+		<!--^^^^^^^^teacher-group-cell^^^^^^^^-->
+		<!--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^-->
+		<div class="teacher-group-cell">
+			<ul class="teacher-group-list">
+				<li class="teacher-group-item">
+					<a href="" class="teacher-group-item-link">
+						<span class="teacher-group-item-link-txt">UDAYA TEACHERS</span>
+					</a>
+				</li>
+				<li class="teacher-group-item">
+					<a href="" class="teacher-group-item-link">
+						<span class="teacher-group-item-link-txt">GUEST TEACHERS</span>
+					</a>
+				</li>
+				<li class="teacher-group-item">
+					<a href="" class="teacher-group-item-link">
+						<span class="teacher-group-item-link-txt">COMMUNITY TEACHERS</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^-->
+		<!--^^^^^^^^/teacher-group-cell^^^^^^^^-->
+		<!--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^-->
+
+		<div class="spacer-page-3"></div>
+
+		<!--================================-->
+		<!--===========teacher-list-cell==========-->
+		<!--================================-->
+		<div class="teacher-list-cell">
+			<div class="teacher-list-fix">
+				<ul class="teacher-list">
+					<li class="teacher-item" data-ng-repeat="allTeacher in allTeachers.teachers1">
+						<div class="teacher-item-pad">
+							<figure class="teacher-item-figure">
+								<a href="teachers/{{allTeacher.teacherID}}/{{((allTeacher.title).toLowerCase()).split(' ').join('-')}}/" class="teacher-item-link hta" title="{TEACHER NAME}">
+									<span class="teacher-img-radius"> 
+										<img	ng-src="img/teacher-page/{{allTeacher.img}}" 
+													alt="{{allTeacher.title}}" 
+													title="{{allTeacher.title}}" 
+													width="174" 
+													height="174" 
+													class="resize-teacher-img hta"/>
+									</span>
+								</a>
+								<figcaption class="teacher-item-figcaption">
+									<h2 class="teacher-item-figcaption-title">
+										<span class="teacher-item-figcaption-title-txt">
+											{{allTeacher.title}}
+										</span>
+									</h2>
+								</figcaption>
+							</figure>
+						</div>
+					</li>
+					<li class="teacher-item" data-ng-repeat="allTeacher in allTeachers.teachers2">
+						<div class="teacher-item-pad">
+							<figure class="teacher-item-figure">
+								<a href="teachers/{{allTeacher.teacherID}}/{{((allTeacher.title).toLowerCase()).split(' ').join('-')}}/" class="teacher-item-link hta" title="{{allTeacher.title}}">
+									<span class="teacher-img-radius"> 
+										<img	ng-src="img/teacher-page/{{allTeacher.img}}" 
+													alt="{{allTeacher.title}}" 
+													title="{{allTeacher.title}}" 
+													width="174" 
+													height="174" 
+													class="resize-teacher-img hta"/>
+									</span>
+								</a>
+								<figcaption class="teacher-item-figcaption">
+									<h2 class="teacher-item-figcaption-title">
+										<span class="teacher-item-figcaption-title-txt">
+											{{allTeacher.title}}
+										</span>
+									</h2>
+								</figcaption>
+							</figure>
+						</div>
+					</li>
+					<li class="teacher-item" data-ng-repeat="allTeacher in allTeachers.teachers3">
+						<div class="teacher-item-pad">
+							<figure class="teacher-item-figure">
+								<a href="teachers/{{allTeacher.teacherID}}/{{((allTeacher.title).toLowerCase()).split(' ').join('-')}}/" class="teacher-item-link hta" title="{{allTeacher.title}}">
+									<span class="teacher-img-radius"> 
+										<img	ng-src="img/teacher-page/{{allTeacher.img}}" 
+													alt="{{allTeacher.title}}" 
+													title="{{allTeacher.title}}" 
+													width="174" 
+													height="174" 
+													class="resize-teacher-img hta"/>
+									</span>
+								</a>
+								<figcaption class="teacher-item-figcaption">
+									<h2 class="teacher-item-figcaption-title">
+										<span class="teacher-item-figcaption-title-txt">
+											{{allTeacher.title}}
+										</span>
+									</h2>
+								</figcaption>
+							</figure>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--================================-->
+		<!--==========/teacher-list-cell==========-->
+		<!--================================-->
+
+		<div class="preload-place"></div>
+	</div>
+</div>
+<!--PAGES-->

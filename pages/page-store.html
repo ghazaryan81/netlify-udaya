@@ -1,0 +1,60 @@
+<!--===============================-->
+<!--============STORE-PAGE==========-->
+<!--===============================-->
+<div class="PAGES">
+	<div class="PAGES-PAD">
+		<div class="page-top-spacer"></div>
+		<h2 class="page-title">
+			<span class="page-title-txt">STORE</span>
+		</h2>
+		<div class="spacer-page-2"></div>
+		<!--quad-col-->
+		<div class="cbx10" data-ng-controller="storeCtrl">
+			<!--~~~~~~quad-col-item~~~~~~-->
+			<div class="quad-col-item" data-ng-repeat="storeItem in storeList">
+				<h3 class="store-product-name">
+					<a href="#" class="store-product-name-link">
+						<span class="store-product-name-link-txt" data-ng-bind-html="storeItem.storeProductTitle">
+
+						</span>
+					</a>
+				</h3>
+				<!--store-product-figure-->
+				<figure class="store-product-figure">
+					<span class="store-product-link-pad">
+						<a href="store/{{storeItem.storeProductID}}/{{((storeItem.storeProductTitle).toLowerCase()).split(' ').join('-')}}/" class="store-product-link" title="{{storeItem.storeProductTitle}}" class="hta">
+								<img		ng-src="img/{{storeItem.storeProductImg}}" 
+											alt="{{storeItem.storeProductTitle}}" 
+											title="{{storeItem.storeProductTitle}}" 
+											width="313" 
+											height="342" 
+											class="hta store-product-img"/>
+						</a>
+					</span>
+					<figcaption class="store-product-figcaption">
+						<span class="store-product-figcaption-pad">
+							{{storeItem.strippedString}} {{storeItem.storeProductDescr}}
+						</span>
+					</figcaption>
+				</figure>
+				<!--/store-product-figure-->
+				<!--buy-button-place-->
+				<div class="buy-button-place">
+					<div class="buy-button-place-pad">
+						<a href="#" class="animate-button">
+							<span class="animate-button-txt n-pad" data-href-txt="BUY NOW">
+								BUY NOW
+							</span>
+						</a>
+					</div>
+				</div>
+				<!--/buy-button-place-->
+			</div>
+			<!--~~~~~~/quad-col-item~~~~~~-->
+		</div>
+		<!--/quad-col-->
+	</div>
+</div>
+<!--===============================-->
+<!--============/STORE-PAGE==========-->
+<!--===============================-->

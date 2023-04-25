@@ -1,0 +1,592 @@
+	<!--=======================-->
+	<!--======main-drop-down======-->
+	<!--=======================-->
+	<div class="main-drop-down-2 mdd for-teacher" data-ng-controller="teachersJsonCtrl">
+		<span class="arrow-up">
+			<img src="img/arrow.png" alt="" title="" width="33" />
+		</span>
+		<div class="dd-teacher-place">
+			<!--~~~dd-teacher-place-pad~~~-->
+			<div class="dd-teacher-place-pad">
+
+				<!--dd-teacher-title-place-->
+				<div class="dd-teacher-title-place">
+					<div class="dd-teacher-title-place-pad">
+						<h2 class="dd-teacher-title-txt">
+							<span class="dd-teacher-title-txt-inner">
+								UDAYA TEACHERS
+							</span>
+							<span class="see-all-cell">
+								<a href="#" class="see-all-link">
+									<span href="#" class="see-all-link-txt">
+										See All
+									</span>
+								</a>
+							</span>
+						</h2>
+					</div>
+				</div>
+				<!--/dd-teacher-title-place-->
+
+
+				<!--dd-teacher-carousel-place-->
+				<div class="dd-teacher-carousel-place">
+					<a href="#" class="dd-teacher-arrow-size dd-teacher-arrow-prev js-dd-t-prev-1">
+						<span class="dd-teacher-arrow-prev-cell">
+							<svg id="dd-teacher-arrow-prev-svg" class="dd-svg-arrow dd-teacher-arrow-prev-svg" viewBox="0 0 499 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+								<path class="path1" d="M461.969 1002.331l-441.319-490.327 441.319-490.326 15.394 13.861-428.805 476.465 428.805 476.467-15.394 13.861z"></path>
+								<path class="path2" d="M0 512.004l460.832-512.004 38.201 34.403-429.823 477.6 429.823 477.602-38.201 34.396z"></path>
+							</svg>
+						</span>
+					</a>
+					<a href="#" class="dd-teacher-arrow-size dd-teacher-arrow-next js-dd-t-next-1">
+						<span class="dd-teacher-arrow-next-cell">
+							<svg id="dd-teacher-arrow-next-svg" class="dd-svg-arrow dd-teacher-arrow-next-svg" viewBox="0 0 499 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+								<path class="path1" d="M37.062 21.671l441.32 490.326-441.32 490.326-15.394-13.861 428.805-476.467-428.803-476.463 15.392-13.861z"></path>
+								<path class="path2" d="M499.033 511.996l-460.832 512.004-38.201-34.401 429.823-477.602-429.823-477.602 38.201-34.394z"></path>
+							</svg>
+						</span>
+					</a>
+
+					<!--===dd-teacher-carousel-list===-->
+					<div class="dd-teacher-carousel-list js-dd-teacher-carousel-list-1">
+
+						<!--****item****-->
+						<div class="single-item-dd-teacher">
+							<div class="dd-teacher-carousel-item item" data-ng-repeat="teacherJson1 in teachersJson.teachers1" ng-if="$index<=3">
+									<figure class="dd-teacher-carousel-item-figure">
+										<a href="#" class="dd-teacher-carousel-item-link">
+											<span class="teacher-img-cell">
+												<img src="img/ng-src.png" ng-src="img/teacher-page/{{teacherJson1.img}}" 
+															alt="{teacher name}" 
+															title="{teacher name}" 
+															width="99" 
+															height="99" 
+															class="teacher-img-border" />
+											</span>
+											<figcaption class="dd-teacher-carousel-item-figcaption">
+												<span class="dd-teacher-carousel-item-figcaption-txt">
+													{{teacherJson1.title}}
+												</span>
+											</figcaption>
+										</a>
+									</figure>
+
+							</div>
+						</div>
+						<!--****/item****-->
+
+					</div>
+					<!--===/dd-teacher-carousel-list===-->
+				</div>
+				<!--/dd-teacher-carousel-place-->
+
+				<div class="line-break"></div>
+
+				<!--dd-teacher-title-place-->
+				<div class="dd-teacher-title-place">
+					<div class="dd-teacher-title-place-pad">
+						<h2 class="dd-teacher-title-txt">
+							<span class="dd-teacher-title-txt-inner">
+								GUEST TEACHERS
+							</span>
+							<span class="see-all-cell">
+								<a href="#" class="see-all-link">
+									<span href="#" class="see-all-link-txt">
+										See All
+									</span>
+								</a>
+							</span>
+						</h2>
+					</div>
+				</div>
+				<!--/dd-teacher-title-place-->
+
+				<!--dd-teacher-carousel-place-->
+				<div class="dd-teacher-carousel-place">
+					<a href="#" class="dd-teacher-arrow-size dd-teacher-arrow-prev js-dd-t-prev-2">
+						<span class="dd-teacher-arrow-prev-cell">
+							<svg id="dd-teacher-arrow-prev-svg" class="dd-svg-arrow dd-teacher-arrow-prev-svg" viewBox="0 0 499 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+								<path class="path1" d="M461.969 1002.331l-441.319-490.327 441.319-490.326 15.394 13.861-428.805 476.465 428.805 476.467-15.394 13.861z"></path>
+								<path class="path2" d="M0 512.004l460.832-512.004 38.201 34.403-429.823 477.6 429.823 477.602-38.201 34.396z"></path>
+							</svg>
+						</span>
+					</a>
+					<a href="#" class="dd-teacher-arrow-size dd-teacher-arrow-next js-dd-t-next-2">
+						<span class="dd-teacher-arrow-next-cell">
+							<svg id="dd-teacher-arrow-next-svg" class="dd-svg-arrow dd-teacher-arrow-next-svg" viewBox="0 0 499 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+								<path class="path1" d="M37.062 21.671l441.32 490.326-441.32 490.326-15.394-13.861 428.805-476.467-428.803-476.463 15.392-13.861z"></path>
+								<path class="path2" d="M499.033 511.996l-460.832 512.004-38.201-34.401 429.823-477.602-429.823-477.602 38.201-34.394z"></path>
+							</svg>
+						</span>
+					</a>
+
+					<!--===dd-teacher-carousel-list===-->
+					<div class="dd-teacher-carousel-list js-dd-teacher-carousel-list-2">
+
+						<!--****item****-->
+						<div class="single-item-dd-teacher item">
+							<div class="dd-teacher-carousel-item">
+								<figure class="dd-teacher-carousel-item-figure">
+									<a href="#" class="dd-teacher-carousel-item-link">
+										<span class="teacher-img-cell">
+											<img	src="img/teacher-page/5.jpg" 
+														alt="{teacher name}" 
+														title="{teacher name}" 
+														width="99" 
+														height="99" 
+														class="teacher-img-border" />
+										</span>
+										<figcaption class="dd-teacher-carousel-item-figcaption">
+											<span class="dd-teacher-carousel-item-figcaption-txt">
+												RUDDY METTIA
+											</span>
+										</figcaption>
+									</a>
+								</figure>
+							</div>
+							<div class="dd-teacher-carousel-item">
+								<figure class="dd-teacher-carousel-item-figure">
+									<a href="#" class="dd-teacher-carousel-item-link">
+										<span class="teacher-img-cell">
+											<img	src="img/teacher-page/6.jpg" 
+														alt="{teacher name}" 
+														title="{teacher name}" 
+														width="99" 
+														height="99" 
+														class="teacher-img-border" />
+										</span>
+										<figcaption class="dd-teacher-carousel-item-figcaption">
+											<span class="dd-teacher-carousel-item-figcaption-txt">
+												RUDDY METTIA
+											</span>
+										</figcaption>
+									</a>
+								</figure>
+							</div>
+							<div class="dd-teacher-carousel-item">
+								<figure class="dd-teacher-carousel-item-figure">
+									<a href="#" class="dd-teacher-carousel-item-link">
+										<span class="teacher-img-cell">
+											<img	src="img/teacher-page/7.jpg" 
+														alt="{teacher name}" 
+														title="{teacher name}" 
+														width="99" 
+														height="99" 
+														class="teacher-img-border" />
+										</span>
+										<figcaption class="dd-teacher-carousel-item-figcaption">
+											<span class="dd-teacher-carousel-item-figcaption-txt">
+												RUDDY METTIA
+											</span>
+										</figcaption>
+									</a>
+								</figure>
+							</div>
+							<div class="dd-teacher-carousel-item">
+								<figure class="dd-teacher-carousel-item-figure">
+									<a href="#" class="dd-teacher-carousel-item-link">
+										<span class="teacher-img-cell">
+											<img	src="img/teacher-page/8.jpg" 
+														alt="{teacher name}" 
+														title="{teacher name}" 
+														width="99" 
+														height="99" 
+														class="teacher-img-border" />
+										</span>
+										<figcaption class="dd-teacher-carousel-item-figcaption">
+											<span class="dd-teacher-carousel-item-figcaption-txt">
+												RUDDY METTIA
+											</span>
+										</figcaption>
+									</a>
+								</figure>
+							</div>
+						</div>
+						<!--****/item****-->
+						<!--****item****-->
+						<div class="single-item-dd-teacher item">
+							<div class="dd-teacher-carousel-item">
+								<figure class="dd-teacher-carousel-item-figure">
+									<a href="#" class="dd-teacher-carousel-item-link">
+										<span class="teacher-img-cell">
+											<img	src="img/teacher-page/9.jpg" 
+														alt="{teacher name}" 
+														title="{teacher name}" 
+														width="99" 
+														height="99" 
+														class="teacher-img-border" />
+										</span>
+										<figcaption class="dd-teacher-carousel-item-figcaption">
+											<span class="dd-teacher-carousel-item-figcaption-txt">
+												RUDDY METTIA
+											</span>
+										</figcaption>
+									</a>
+								</figure>
+							</div>
+							<div class="dd-teacher-carousel-item">
+								<figure class="dd-teacher-carousel-item-figure">
+									<a href="#" class="dd-teacher-carousel-item-link">
+										<span class="teacher-img-cell">
+											<img	src="img/teacher-page/10.jpg" 
+														alt="{teacher name}" 
+														title="{teacher name}" 
+														width="99" 
+														height="99" 
+														class="teacher-img-border" />
+										</span>
+										<figcaption class="dd-teacher-carousel-item-figcaption">
+											<span class="dd-teacher-carousel-item-figcaption-txt">
+												RUDDY METTIA
+											</span>
+										</figcaption>
+									</a>
+								</figure>
+							</div>
+							<div class="dd-teacher-carousel-item">
+								<figure class="dd-teacher-carousel-item-figure">
+									<a href="#" class="dd-teacher-carousel-item-link">
+										<span class="teacher-img-cell">
+											<img	src="img/teacher-page/11.jpg" 
+														alt="{teacher name}" 
+														title="{teacher name}" 
+														width="99" 
+														height="99" 
+														class="teacher-img-border" />
+										</span>
+										<figcaption class="dd-teacher-carousel-item-figcaption">
+											<span class="dd-teacher-carousel-item-figcaption-txt">
+												RUDDY METTIA
+											</span>
+										</figcaption>
+									</a>
+								</figure>
+							</div>
+							<div class="dd-teacher-carousel-item">
+								<figure class="dd-teacher-carousel-item-figure">
+									<a href="#" class="dd-teacher-carousel-item-link">
+										<span class="teacher-img-cell">
+											<img	src="img/teacher-page/12.jpg" 
+														alt="{teacher name}" 
+														title="{teacher name}" 
+														width="99" 
+														height="99" 
+														class="teacher-img-border" />
+										</span>
+										<figcaption class="dd-teacher-carousel-item-figcaption">
+											<span class="dd-teacher-carousel-item-figcaption-txt">
+												RUDDY METTIA
+											</span>
+										</figcaption>
+									</a>
+								</figure>
+							</div>
+						</div>
+						<!--****/item****-->
+					</div>
+					<!--===/dd-teacher-carousel-list===-->
+				</div>
+				<!--/dd-teacher-carousel-place-->
+
+
+
+
+				<div class="line-break"></div>
+
+
+				<!--dd-teacher-title-place-->
+				<div class="dd-teacher-title-place">
+					<div class="dd-teacher-title-place-pad">
+						<h2 class="dd-teacher-title-txt">
+							<span class="dd-teacher-title-txt-inner">
+								COMMUNITY TEACHERS
+							</span>
+							<span class="see-all-cell">
+								<a href="#" class="see-all-link">
+									<span href="#" class="see-all-link-txt">
+										See All
+									</span>
+								</a>
+							</span>
+						</h2>
+					</div>
+				</div>
+				<!--/dd-teacher-title-place-->
+
+
+				<!--dd-teacher-carousel-place-->
+				<div class="dd-teacher-carousel-place">
+					<a href="#" class="dd-teacher-arrow-size dd-teacher-arrow-prev js-dd-t-prev-3">
+						<span class="dd-teacher-arrow-prev-cell">
+							<svg id="dd-teacher-arrow-prev-svg" class="dd-svg-arrow dd-teacher-arrow-prev-svg" viewBox="0 0 499 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+								<path class="path1" d="M461.969 1002.331l-441.319-490.327 441.319-490.326 15.394 13.861-428.805 476.465 428.805 476.467-15.394 13.861z"></path>
+								<path class="path2" d="M0 512.004l460.832-512.004 38.201 34.403-429.823 477.6 429.823 477.602-38.201 34.396z"></path>
+							</svg>
+						</span>
+					</a>
+					<a href="#" class="dd-teacher-arrow-size dd-teacher-arrow-next js-dd-t-next-3">
+						<span class="dd-teacher-arrow-next-cell">
+							<svg id="dd-teacher-arrow-next-svg" class="dd-svg-arrow dd-teacher-arrow-next-svg" viewBox="0 0 499 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+								<path class="path1" d="M37.062 21.671l441.32 490.326-441.32 490.326-15.394-13.861 428.805-476.467-428.803-476.463 15.392-13.861z"></path>
+								<path class="path2" d="M499.033 511.996l-460.832 512.004-38.201-34.401 429.823-477.602-429.823-477.602 38.201-34.394z"></path>
+							</svg>
+						</span>
+					</a>
+
+					<!--===dd-teacher-carousel-list===-->
+					<div class="dd-teacher-carousel-list js-dd-teacher-carousel-list-3">
+						<!--****item****-->
+						<div class="single-item-dd-teacher item">
+							<div class="dd-teacher-carousel-item">
+								<figure class="dd-teacher-carousel-item-figure">
+									<a href="#" class="dd-teacher-carousel-item-link">
+										<span class="teacher-img-cell">
+											<img	src="img/teacher-page/17.jpg" 
+														alt="{teacher name}" 
+														title="{teacher name}" 
+														width="99" 
+														height="99" 
+														class="teacher-img-border" />
+										</span>
+										<figcaption class="dd-teacher-carousel-item-figcaption">
+											<span class="dd-teacher-carousel-item-figcaption-txt">
+												RUDDY METTIA
+											</span>
+										</figcaption>
+									</a>
+								</figure>
+							</div>
+							<div class="dd-teacher-carousel-item">
+								<figure class="dd-teacher-carousel-item-figure">
+									<a href="#" class="dd-teacher-carousel-item-link">
+										<span class="teacher-img-cell">
+											<img	src="img/teacher-page/18.jpg" 
+														alt="{teacher name}" 
+														title="{teacher name}" 
+														width="99" 
+														height="99" 
+														class="teacher-img-border" />
+										</span>
+										<figcaption class="dd-teacher-carousel-item-figcaption">
+											<span class="dd-teacher-carousel-item-figcaption-txt">
+												RUDDY METTIA
+											</span>
+										</figcaption>
+									</a>
+								</figure>
+							</div>
+							<div class="dd-teacher-carousel-item">
+								<figure class="dd-teacher-carousel-item-figure">
+									<a href="#" class="dd-teacher-carousel-item-link">
+										<span class="teacher-img-cell">
+											<img	src="img/teacher-page/19.jpg" 
+														alt="{teacher name}" 
+														title="{teacher name}" 
+														width="99" 
+														height="99" 
+														class="teacher-img-border" />
+										</span>
+										<figcaption class="dd-teacher-carousel-item-figcaption">
+											<span class="dd-teacher-carousel-item-figcaption-txt">
+												RUDDY METTIA
+											</span>
+										</figcaption>
+									</a>
+								</figure>
+							</div>
+							<div class="dd-teacher-carousel-item">
+								<figure class="dd-teacher-carousel-item-figure">
+									<a href="#" class="dd-teacher-carousel-item-link">
+										<span class="teacher-img-cell">
+											<img	src="img/teacher-page/20.jpg" 
+														alt="{teacher name}" 
+														title="{teacher name}" 
+														width="99" 
+														height="99" 
+														class="teacher-img-border" />
+										</span>
+										<figcaption class="dd-teacher-carousel-item-figcaption">
+											<span class="dd-teacher-carousel-item-figcaption-txt">
+												RUDDY METTIA
+											</span>
+										</figcaption>
+									</a>
+								</figure>
+							</div>
+						</div>
+						<!--****/item****-->
+						<!--****item****-->
+						<div class="single-item-dd-teacher item">
+							<div class="dd-teacher-carousel-item">
+								<figure class="dd-teacher-carousel-item-figure">
+									<a href="#" class="dd-teacher-carousel-item-link">
+										<span class="teacher-img-cell">
+											<img	src="img/teacher-page/5.jpg" 
+														alt="{teacher name}" 
+														title="{teacher name}" 
+														width="99" 
+														height="99" 
+														class="teacher-img-border" />
+										</span>
+										<figcaption class="dd-teacher-carousel-item-figcaption">
+											<span class="dd-teacher-carousel-item-figcaption-txt">
+												RUDDY METTIA
+											</span>
+										</figcaption>
+									</a>
+								</figure>
+							</div>
+							<div class="dd-teacher-carousel-item">
+								<figure class="dd-teacher-carousel-item-figure">
+									<a href="#" class="dd-teacher-carousel-item-link">
+										<span class="teacher-img-cell">
+											<img	src="img/teacher-page/6.jpg" 
+														alt="{teacher name}" 
+														title="{teacher name}" 
+														width="99" 
+														height="99" 
+														class="teacher-img-border" />
+										</span>
+										<figcaption class="dd-teacher-carousel-item-figcaption">
+											<span class="dd-teacher-carousel-item-figcaption-txt">
+												RUDDY METTIA
+											</span>
+										</figcaption>
+									</a>
+								</figure>
+							</div>
+							<div class="dd-teacher-carousel-item">
+								<figure class="dd-teacher-carousel-item-figure">
+									<a href="#" class="dd-teacher-carousel-item-link">
+										<span class="teacher-img-cell">
+											<img	src="img/teacher-page/7.jpg" 
+														alt="{teacher name}" 
+														title="{teacher name}" 
+														width="99" 
+														height="99" 
+														class="teacher-img-border" />
+										</span>
+										<figcaption class="dd-teacher-carousel-item-figcaption">
+											<span class="dd-teacher-carousel-item-figcaption-txt">
+												RUDDY METTIA
+											</span>
+										</figcaption>
+									</a>
+								</figure>
+							</div>
+							<div class="dd-teacher-carousel-item">
+								<figure class="dd-teacher-carousel-item-figure">
+									<a href="#" class="dd-teacher-carousel-item-link">
+										<span class="teacher-img-cell">
+											<img	src="img/teacher-page/8.jpg" 
+														alt="{teacher name}" 
+														title="{teacher name}" 
+														width="99" 
+														height="99" 
+														class="teacher-img-border" />
+										</span>
+										<figcaption class="dd-teacher-carousel-item-figcaption">
+											<span class="dd-teacher-carousel-item-figcaption-txt">
+												RUDDY METTIA
+											</span>
+										</figcaption>
+									</a>
+								</figure>
+							</div>
+						</div>
+						<!--****/item****-->
+						<!--****item****-->
+						<div class="single-item-dd-teacher item">
+							<div class="dd-teacher-carousel-item">
+								<figure class="dd-teacher-carousel-item-figure">
+									<a href="#" class="dd-teacher-carousel-item-link">
+										<span class="teacher-img-cell">
+											<img	src="img/teacher-page/9.jpg" 
+														alt="{teacher name}" 
+														title="{teacher name}" 
+														width="99" 
+														height="99" 
+														class="teacher-img-border" />
+										</span>
+										<figcaption class="dd-teacher-carousel-item-figcaption">
+											<span class="dd-teacher-carousel-item-figcaption-txt">
+												RUDDY METTIA
+											</span>
+										</figcaption>
+									</a>
+								</figure>
+							</div>
+							<div class="dd-teacher-carousel-item">
+								<figure class="dd-teacher-carousel-item-figure">
+									<a href="#" class="dd-teacher-carousel-item-link">
+										<span class="teacher-img-cell">
+											<img	src="img/teacher-page/10.jpg" 
+														alt="{teacher name}" 
+														title="{teacher name}" 
+														width="99" 
+														height="99" 
+														class="teacher-img-border" />
+										</span>
+										<figcaption class="dd-teacher-carousel-item-figcaption">
+											<span class="dd-teacher-carousel-item-figcaption-txt">
+												RUDDY METTIA
+											</span>
+										</figcaption>
+									</a>
+								</figure>
+							</div>
+							<div class="dd-teacher-carousel-item">
+								<figure class="dd-teacher-carousel-item-figure">
+									<a href="#" class="dd-teacher-carousel-item-link">
+										<span class="teacher-img-cell">
+											<img	src="img/teacher-page/11.jpg" 
+														alt="{teacher name}" 
+														title="{teacher name}" 
+														width="99" 
+														height="99" 
+														class="teacher-img-border" />
+										</span>
+										<figcaption class="dd-teacher-carousel-item-figcaption">
+											<span class="dd-teacher-carousel-item-figcaption-txt">
+												RUDDY METTIA
+											</span>
+										</figcaption>
+									</a>
+								</figure>
+							</div>
+							<div class="dd-teacher-carousel-item">
+								<figure class="dd-teacher-carousel-item-figure">
+									<a href="#" class="dd-teacher-carousel-item-link">
+										<span class="teacher-img-cell">
+											<img	src="img/teacher-page/12.jpg" 
+														alt="{teacher name}" 
+														title="{teacher name}" 
+														width="99" 
+														height="99" 
+														class="teacher-img-border" />
+										</span>
+										<figcaption class="dd-teacher-carousel-item-figcaption">
+											<span class="dd-teacher-carousel-item-figcaption-txt">
+												RUDDY METTIA
+											</span>
+										</figcaption>
+									</a>
+								</figure>
+							</div>
+						</div>
+						<!--****/item****-->
+					</div>
+					<!--===/dd-teacher-carousel-list===-->
+				</div>
+				<!--/dd-teacher-carousel-place-->
+
+
+
+			</div>
+			<!--~~~/dd-teacher-place-pad~~~-->
+		</div>
+	</div>
+	<!--=======================-->
+	<!--======/main-drop-down======-->
+	<!--=======================-->
